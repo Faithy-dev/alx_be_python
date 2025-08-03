@@ -4,10 +4,9 @@ from simple_calculator import SimpleCalculator
 class TestSimpleCalculator(unittest.TestCase):
 
     def setUp(self):
-        """Create a SimpleCalculator instance before each test."""
         self.calc = SimpleCalculator()
 
-    def test_add(self):
+    def test_addition(self):
         self.assertEqual(self.calc.add(1, 1), 2)
         self.assertEqual(self.calc.add(-1, 1), 0)
         self.assertEqual(self.calc.add(0, 0), 0)
